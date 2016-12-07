@@ -29,11 +29,5 @@ layout: default
 
 <div class="feed">
     <h1>Feeds:</h1>
-    <ul>
-        {% for post in site.posts %}
-        <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="rss-feed"></div>
 </div>
