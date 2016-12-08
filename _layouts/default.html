@@ -29,6 +29,58 @@
         {{ content }}
     </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/js/yrss.js"></script>
+<script>
+  $('.rss-feed').rssfeed('http://vongomben.tumblr.com/rss', {
+
+  // enable ssl
+  ssl: false,
+
+  // max number of items
+  limit: 10,
+
+  // show error message
+  showerror: true,
+
+  // custom error message
+  errormsg: '',
+
+  // show tags
+  tags: false,
+
+  // show <a href="http://www.jqueryscript.net/time-clock/">date</a>
+  date: true,
+
+  // date format
+  dateformat: 'default',
+
+  // heading tag for titles
+  titletag: 'h4',
+
+  // show content
+  content: true,
+
+  // show snippet
+  snippet: true,
+
+  // show snippet image
+  snippetimage: false,
+
+  // max number of characters
+  snippetlimit: 120,
+
+  // href target attribute
+  linktarget: '_self'
+
+}, function () {
+  // optional callback function
+});
+
+</script>
+
+
+
 </body>
 
 </html>
